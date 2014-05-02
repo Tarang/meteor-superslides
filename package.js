@@ -6,8 +6,12 @@ Package.on_use(function (api) {
     api.use("jquery", "client");
 
     api.add_files([
-        "lib/Superslides.js"
+        "lib/superslides.js"
     ], "client", {bare: true});
+
+    api.add_files([
+        "lib/superslides.css"
+    ], "client");
 
     api.export("Superslides");
 });
